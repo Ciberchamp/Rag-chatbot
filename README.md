@@ -68,13 +68,13 @@ Pre-built images available on Docker Hub: https://hub.docker.com/repositories/ci
  docker pull ciberchamp/rag-chatbot-frontend:latest
 
 Run manually:
-- **Start backend**
+- **Start backend** -->
 docker run -p 8000:8000 ciberchamp/rag-chatbot-backend:latest
 
-- **Start frontend**
+- **Start frontend** -->
 docker run -p 8501:8501 ciberchamp/rag-chatbot-frontend:latest
 
-- Or run both together: docker-compose build
+- Or run both together: docker-compose build -->
 docker-compose up
 
 **Known Issues**
