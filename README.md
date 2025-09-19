@@ -1,7 +1,7 @@
 *RAG HR Chatbot
 A Retrieval-Augmented Generation (RAG) chatbot for answering HR policy documentation queries using FAISS, BM25 re-ranking, and caching.
 
-Features as per rquirement
+*Features as per rquirement
 Document Processing: PDF text extraction, cleaning, and chunking
 Vector Search: FAISS index with embeddings
 Re-ranking: BM25 scoring on top of FAISS results
@@ -10,9 +10,11 @@ Lightweight: Uses TF-IDF instead of heavy sentence transformers
 Dockerized: Complete containerization for easy deployment
 
 > Architecture
+
 Frontend (Streamlit) → Backend (FastAPI) → FAISS Index → Groq LLM
 
 > Installation
+
 To Clone repository use commands:
 git clone <your-repo-url>
 cd rag-chatbot
