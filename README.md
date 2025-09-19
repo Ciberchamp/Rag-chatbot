@@ -80,3 +80,5 @@ docker-compose up
 **Known Issues**
 - View source in ui might give incomplete response due to model capacity
 - Docker compatibility warnings may appear on some Windows setups
+
+**working project demo** --> https://drive.google.com/file/d/1fmyCgSvU2yx7owM_QY5mwDh4JDrKWqHd/view?usp=sharing
