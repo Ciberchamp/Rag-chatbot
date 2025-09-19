@@ -23,14 +23,14 @@ cd rag-chatbot
 
 For data folder HR policy PDF is already included
 
-**Set environment variables**
+**Set environment variables** - 
 create .env file in root folder and add
 - "GROQ_API_KEY=your_groq_api_key" (add your own groq api key value here) 
 
-**to Run with Docker**
+**to Run with Docker**  - 
 docker-compose up --build
 
-**Usage**
+**Usage** - 
 Access frontend: http://localhost:8501
 
 Example queries:
@@ -38,7 +38,7 @@ Example queries:
 - attendance policy?
 - working hours?
 
-**Performance Optimization though self experiment**
+**Performance Optimization though self experiment** - 
 This implementation uses TF-IDF instead of Sentence Transformers to:
 - Reduce build time from 40+ minutes to 3 minutes
 - Eliminate GPU dependencies
@@ -47,7 +47,7 @@ This implementation uses TF-IDF instead of Sentence Transformers to:
 - Avoid complex model downloads (like pytorch or Nvidia models for gpu)
 
 **Security Notes**
-API keys stored in .env (excluded via .gitignore)
+- API keys stored in .env (excluded via .gitignore)
 - No sensitive data committed to the repository
 - Docker containers run in isolation
 - Groq API calls secured via HTTPS
@@ -60,19 +60,19 @@ API keys stored in .env (excluded via .gitignore)
 - Embeddings: TF-IDF vectors (lightweight)
 - Cache: JSON-based query caching
 
-**Docker Images**
+**Docker Images** :
 Pre-built images available on Docker Hub: https://hub.docker.com/repositories/ciberchamp
 - Backend:
-docker pull ciberchamp/rag-chatbot-backend:latest
+ docker pull ciberchamp/rag-chatbot-backend:latest
 - Frontend:
-docker pull ciberchamp/rag-chatbot-frontend:latest
+ docker pull ciberchamp/rag-chatbot-frontend:latest
 
 Run manually:
 **Start backend**
 docker run -p 8000:8000 ciberchamp/rag-chatbot-backend:latest
 **Start frontend**
 docker run -p 8501:8501 ciberchamp/rag-chatbot-frontend:latest
-- Or run both together:
+- Or run both together: docker-compose build
 docker-compose up
 
 **Known Issues**
